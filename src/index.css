@@ -47,15 +47,26 @@ code {
     max-height: 900px;
     background: linear-gradient(115.6deg, #3EB5F1 3.7%, #4E6FB3 59.81%, #3EB5F1 103.65%);
 }
+.content .mainStructureItems div{
+    text-align: center;
+}
 
 .content .item {
-    display: grid;
+    display: inline-grid;
     grid-template-rows: 50% 50%;
     align-items: center;
     height: 20vw;
+    width: 25%;
     background-color: white;
     border-radius: 30px;
     font-size: 1.5vw;
+    font-weight: bold;
+    margin: 2vw;
+    padding: 2vw;
+}
+.content .item .text{
+    text-align: end;
+    height: 5vw;
 }
 
 .content .item img {

@@ -56,49 +56,41 @@ function Slider() {
 
 function MainStructure() {
     return (
-        <div>
-            <div className='container-fluid fw-bold text-end fs-4'>
-                <div className='row pt-4'>
-                    <div className='col item m-4 '>
-                        <NavLink to='/admin'>
-                            <div className='p-4'>
-                                АДМИНИСТРАТИВНЫЕ ПРОЦЕДУРЫ
-                            </div>
-                        </NavLink>
-                        <img src={admin} alt='admin'/>
-                    </div>
-                    <div className='col item m-4 p-4'>
-                        <NavLink to='/managers'>
-                            <div>
-                                РУКОВОДСТВО
-                            </div>
-                        </NavLink>
-                        <img src={managers} alt='managers'/>
-                    </div>
-                    <div className='col item m-4 p-4'>
-                        <NavLink to='/graphic'>
-                            <div>
-                                ГРАФИК ПРИЁМА
-                            </div>
-                        </NavLink>
-                        <img src={graphic} alt='graphic'/>
-                    </div>
+        <div className='mainStructureItems'>
+            <div>
+                <div className='item'>
+                    <NavLink to='/admin'>
+                        <div className='text'>
+                            АДМИНИСТРАТИВНЫЕ ПРОЦЕДУРЫ
+                        </div>
+                    </NavLink>
+                    <img src={admin} alt='admin'/>
                 </div>
-                <div className='row pt-4'>
-                    <div className='col m-4 p-4'>
-
-                    </div>
-                    <div className='col item  m-4 p-4'>
-                        <NavLink to='/structure'>
-                            <div>
-                                СТРУКТУРА
-                            </div>
-                        </NavLink>
-                        <img src={structure} alt='structure'/>
-                    </div>
-                    <div className='col m-4 p-4'>
-
-                    </div>
+                <div className='item'>
+                    <NavLink to='/managers'>
+                        <div className='text'>
+                            РУКОВОДСТВО
+                        </div>
+                    </NavLink>
+                    <img src={managers} alt='managers'/>
+                </div>
+                <div className='item'>
+                    <NavLink to='/graphic'>
+                        <div className='text'>
+                            ГРАФИК ПРИЁМА
+                        </div>
+                    </NavLink>
+                    <img src={graphic} alt='graphic'/>
+                </div>
+            </div>
+            <div className=''>
+                <div className='item'>
+                    <NavLink to='/structure'>
+                        <div className='text'>
+                            СТРУКТУРА
+                        </div>
+                    </NavLink>
+                    <img src={structure} alt='structure'/>
                 </div>
             </div>
         </div>

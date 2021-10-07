@@ -9,47 +9,43 @@ function Admin() {
         <div className='structure'>
             <span>АДМИНИСТРАТИВНЫЕ ПРОЦЕДУРЫ</span>
             <img onClick={() => history.goBack()} className='back' src={arrowBack} alt='back'/>
-            <div>
-                <div className='container-fluid fw-bold text-end fs-4'>
-                    <div className='row pt-4'>
-                        <div className='col item m-4 p-4'>
-                            <NavLink to='/page1'>
-                                <div>
-                                    СТРАНИЦА 1
-                                </div>
-                            </NavLink>
-                            <img src={post} alt='post'/>
-                        </div>
-                        <div className='col item m-4 p-4'>
-                            <NavLink to='/'>
-                                <div>
-                                    ПРОЦЕДУРА 2
-                                </div>
-                            </NavLink>
-                            <img src={post} alt='post'/>
-                        </div>
-                        <div className='col item m-4 p-4'>
-                            <NavLink to='/'>
-                                <div>
-                                    ПРОЦЕДУРА 3
-                                </div>
-                            </NavLink>
-                            <img src={post} alt='post'/>
-                        </div>
+
+
+            <div className='mainStructureItems'>
+                <div>
+                    <div className='item'>
+                        <NavLink to='/page1'>
+                            <div className='text'>
+                                СТРАНИЦА 1
+                            </div>
+                        </NavLink>
+                        <img src={post} alt='post'/>
                     </div>
-                    <div className='row pt-4'>
-                        <div className='col m-4 p-4'>
-                        </div>
-                        <div className='col item  m-4 p-4'>
-                            <NavLink to='/'>
-                                <div>
-                                    ПРОЦЕДУРА 4
-                                </div>
-                            </NavLink>
-                            <img src={post} alt='post'/>
-                        </div>
-                        <div className='col m-4 p-4'>
-                        </div>
+                    <div className='item'>
+                        <NavLink to='/'>
+                            <div className='text'>
+                                ПРОЦЕДУРА 1
+                            </div>
+                        </NavLink>
+                        <img src={post} alt='post'/>
+                    </div>
+                    <div className='item'>
+                        <NavLink to='/'>
+                            <div className='text'>
+                                ПРОЦЕДУРА 2
+                            </div>
+                        </NavLink>
+                        <img src={post} alt='post'/>
+                    </div>
+                </div>
+                <div className=''>
+                    <div className='item'>
+                        <NavLink to='/'>
+                            <div className='text'>
+                                ПРОЦЕДУРА 3
+                            </div>
+                        </NavLink>
+                        <img src={post} alt='post'/>
                     </div>
                 </div>
             </div>
